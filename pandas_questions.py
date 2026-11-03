@@ -33,7 +33,7 @@ def merge_regions_and_departments(regions, departments):
     ['code_reg', 'name_reg', 'code_dep', 'name_dep']
     """
 
-    
+
     final_df = pd.DataFrame({})
     final_df = pd.merge(
         regions,
@@ -44,7 +44,7 @@ def merge_regions_and_departments(regions, departments):
     )
     final_df = final_df[["code_reg", "name_reg", "code_dep", "name_dep"]]
 
-    
+
     return final_df
 
 
@@ -167,4 +167,4 @@ if __name__ == "__main__":
 
     plot_referendum_map(referendum_results)
     plt.show()
-    
+
